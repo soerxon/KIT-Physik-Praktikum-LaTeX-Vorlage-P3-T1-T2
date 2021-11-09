@@ -1,0 +1,75 @@
+\documentclass[11pt]{scrreprt}
+\usepackage[left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{textcomp, gensymb}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{varioref}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage[version=4]{mhchem}
+\usepackage{cleveref}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{booktabs} % Schönere Tabellen
+\usepackage{pgfplots} \pgfplotsset{compat=1.16} % Plotten, Tabellen und vieles mehr
+
+\begin{document}
+
+\pagenumbering{arabic} % Ab hier beginnt die Seitennummerierung
+\setcounter{page}{1}   % mit Seitenzahl 1.
+
+%--------Deckblatt Versuchsprotokoll----------%
+\import{chapters/}{Deckblatt}
+%---------------------------------------------%
+
+%--------Inhaltsverzeichnis, Tabellen- und Abbildungsverzeichnis----------%
+\setcounter{chapter}{0} 
+\tableofcontents % Erstellt ein Inhaltsverzeichnis
+%\vspace{50px}   
+%\listoffigures  % Erstellt ein Abbildungsverzeichnis. Dies wird von manchen Tutor:innen gefordert.
+%\vspace{50px}   
+%\listoftables  % Erstellt ein Tabellenverzeichnis. Dies wird von manchen Tutor:innen gefordert.
+\pagebreak
+%-------------------------------------------------------------------------%
+
+%--------Aufgabenblatt----------%
+\addcontentsline{toc}{chapter}{Aufgabenstellung} %kann so dem Inhaltsverzeichnis hinzugefügt werden
+\includepdf[pages=-, pagecommand={}]{include/Aufgabenblatt.pdf} 
+% Die Datei Aufgabenblatt.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das aktuelle Aufgabenblatt des Versuchs ausgetauscht werden.
+%-------------------------------%
+
+
+
+%--------Inhalt der Kapitel----------%
+\import{chapters/}{Vorbereitung}
+
+\import{chapters/}{01}
+
+\import{chapters/}{02}
+
+\import{chapters/}{03}
+
+\import{chapters/}{04}
+%------------------------------------%
+
+%--------Quellen----------%
+\import{chapters/}{Quellen}
+%-------------------------%
+
+%--------Anhang (Messprotokoll)----------%
+\newpage
+\addcontentsline{toc}{chapter}{Messprotokoll}
+\includepdf[pages=-,pagecommand={}]{include/Messprotokoll.pdf} 
+% Die Datei Messprotokoll.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das, während des Versuchs erstelltem Messprotokoll, ausgetauscht werden.
+%----------------------------------------%
+
+
+\end{document}

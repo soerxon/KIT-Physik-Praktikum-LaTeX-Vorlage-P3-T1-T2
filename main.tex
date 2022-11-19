@@ -1,3 +1,6 @@
+% Dies ist die Main-Datei. Hier werden alle Kapitel zusammengefügt. Hier wird kein Inhalt niedergeschrieben.
+
+% Festlegung des Dokumenttyps und Import von Paketen, die üblicherweise benötigt werden.
 \documentclass[11pt]{scrreprt}
 \usepackage[left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
 \usepackage[utf8]{inputenc}
@@ -21,11 +24,13 @@
 \usepackage{booktabs} % Schönere Tabellen
 \usepackage{pgfplots} \pgfplotsset{compat=1.16} % Plotten, Tabellen und vieles mehr
 
+% Start des Dokuments
 \begin{document}
 
 \pagenumbering{arabic} % Ab hier beginnt die Seitennummerierung
-\setcounter{page}{1}   % mit Seitenzahl 1.
+\setcounter{page}{1}   % mit Seitenzahl 1. Dies stimmt oft mit der Seitennummerierung der Aufgabenblätter überein.
 
+%Ab hier werden die verschiedenen Dateien, aus denen sich das Dokument zusammenfügt, eingebunden.
 %--------Deckblatt Versuchsprotokoll----------%
 \import{chapters/}{Deckblatt}
 %---------------------------------------------%
@@ -34,16 +39,16 @@
 \setcounter{chapter}{0} 
 \tableofcontents % Erstellt ein Inhaltsverzeichnis
 %\vspace{50px}   
-%\listoffigures  % Erstellt ein Abbildungsverzeichnis. Dies wird von manchen Tutor:innen gefordert.
+%\listoffigures  % Erstellt ein Abbildungsverzeichnis. Dies wird von manchen Tutor*innen gefordert.
 %\vspace{50px}   
-%\listoftables  % Erstellt ein Tabellenverzeichnis. Dies wird von manchen Tutor:innen gefordert.
+%\listoftables  % Erstellt ein Tabellenverzeichnis. Dies wird von manchen Tutor*innen gefordert.
 \pagebreak
 %-------------------------------------------------------------------------%
 
 %--------Aufgabenblatt----------%
 \addcontentsline{toc}{chapter}{Aufgabenstellung} %kann so dem Inhaltsverzeichnis hinzugefügt werden
 \includepdf[pages=-, pagecommand={}]{include/Aufgabenblatt.pdf} 
-% Die Datei Aufgabenblatt.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das aktuelle Aufgabenblatt des Versuchs ausgetauscht werden.
+% Die Datei Aufgabenblatt.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das aktuelle Aufgabenblatt des Versuchs ausgetauscht werden.  Der Dateiname muss gleich bleiben oder im \includepdf Befehl geändert werden.
 %-------------------------------%
 
 
@@ -58,6 +63,10 @@
 \import{chapters/}{03}
 
 \import{chapters/}{04}
+
+% Werden mehr Aufgabenkapitel benötigt, können diese hier eingebunden werden. \import{chapters/}{Dateiname}
+% Zusätzlich muss eine neue *.tex Datei mit dem genannten Dateinamen unter chapters eingefügt werden.
+
 %------------------------------------%
 
 %--------Quellen----------%
@@ -68,7 +77,7 @@
 \newpage
 \addcontentsline{toc}{chapter}{Messprotokoll}
 \includepdf[pages=-,pagecommand={}]{include/Messprotokoll.pdf} 
-% Die Datei Messprotokoll.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das, während des Versuchs erstelltem Messprotokoll, ausgetauscht werden.
+% Die Datei Messprotokoll.pdf mit dem Inhalt "Test-Test-Test-Test" muss durch das, während des Versuchs erstelltem Messprotokoll, ausgetauscht werden.  Der Dateiname muss gleich bleiben oder im \includepdf Befehl geändert werden.
 %----------------------------------------%
 
 

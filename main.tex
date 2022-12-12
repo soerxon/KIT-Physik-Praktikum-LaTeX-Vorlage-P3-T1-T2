@@ -11,7 +11,7 @@
 \usepackage{caption}
 \usepackage{xcolor}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref} % Einbinden von Links und Metadaten, farbige Umrandung von Links ist ausgeschalten
 \usepackage{varioref}
 \usepackage{mathtools}
 \usepackage{amssymb}
@@ -23,6 +23,9 @@
 \usepackage{tikz}
 \usepackage{booktabs} % Schönere Tabellen
 \usepackage{pgfplots} \pgfplotsset{compat=1.16} % Plotten, Tabellen und vieles mehr
+
+% Verhindert Einrückungen von Text im Dokument
+\setlength\parindent{0pt}
 
 % Start des Dokuments
 \begin{document}

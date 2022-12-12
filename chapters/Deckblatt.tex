@@ -15,8 +15,6 @@
 \newcommand{\assistent}{} %Assistent*in:
 \newcommand{\durchfuehrungsdatum}{} %Durchgeführt am:
 \newcommand{\abgabedatum}{} %Protokollabgabe am:
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Ab hier gibt es nichts mehr auszufüllen.
 \begin{tikzpicture}[remember picture,overlay]
@@ -33,7 +31,8 @@
         \node at (7.2cm,13.0cm){\Large{\abgabedatum}}; % Protokollabgabe am:
     \end{scope}
 \end{tikzpicture}
-% Diese Informationen werden als Meta-Daten in die PDF-Datei eingebettet. Dabei werden die Informationen automatisch aus dem Deckblatt übernommen.
+% Diese Informationen werden als Meta-Daten in die PDF-Datei eingebettet.
+% Dabei werden die Informationen automatisch aus den eingetragenen Informationen übernommen.
 \hypersetup{
   pdftitle    = {\praktikum\hspace{0.2222em}Protokoll - \versuch},
   pdfsubject  = {Protokoll des Versuchs \versuch\hspace{0.2222em}vom \durchfuehrungsdatum},

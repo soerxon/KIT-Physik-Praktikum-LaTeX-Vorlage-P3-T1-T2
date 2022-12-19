@@ -2,6 +2,11 @@
 Diese LaTeX-Vorlage ist geeignet für das Fortgeschrittenenpraktikum P3-T1 und das Masterpraktikum P3-T2 der Fakultät für Physik am Karlsruher Institut für Technologie. Es wird die Verwendung von Overleaf empfohlen.
 Bei Fragen oder Problemen könnt ihr euch gerne an soeren@fachschaft.physik.kit.edu wenden.
 
+## Import der Vorlage
+Um diese Vorlage in Overleaf zu importieren gibt es zwei Möglichkeiten.
+1. Download dieser Vorlage über den grünen Button "Code" und dannn als "ZIP-Datei herunterladen". Als nächstes kann in Overleaf unter "Neues Projekt" ein eine Vorlage als ZIP-Datei hochgeladen werden.
+2. Verbindet euren Overleaf Account mit GitHub. geht dazu in die Einstellungen von Overleaf. Nun könnt ihr dieses Projekt mit eurem eigenen GitHub Account "Forken". Damit erstellt ihr eure eigene Kopie dieses Projekts. In Overleaf könnt ihr nun das Projekt aus GitHub importieren. Der Vorteil dieser Methode ist, dass ihr eigene Änderungen, wie zum Beispiel die Daten auf dem Deckblatt, in euer eigenes Projekt pushen könnt. Nun habt ihr immer eure persönliche Vorlage mit euren Daten parat. Sollte ich weitere Änderungen an diesem Projekt vornehmen, könnt ihr diese einfach pullen.  
+
 ## Verwendung
 1. In die main.tex wird kein Inhalt geschrieben. Hier werden bei Bedarf benötigte Pakete hinzugefügt oder weitere Kapitel(Aufgaben) importiert.
 2. Füllt die Datei Deckblatt.tex im Ordner chapters mit euren Daten aus.

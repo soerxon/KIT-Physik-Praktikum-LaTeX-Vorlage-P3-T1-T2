@@ -39,6 +39,7 @@ Unterstützte Dateiformate: `*.png`, `*.jpg`, `*.jpeg`, `*.pdf`
 
 ### Tabellen einfügen
 
+```
 \begin{table}[!htb] % h for here; t for top; b for bottom; ! overrides internal parameters LaTeX uses for determining "good" float positions
     \centering % Zentrieren der Tabelle auf der Seite
     \caption{} % Tabellen haben Überschriften!
